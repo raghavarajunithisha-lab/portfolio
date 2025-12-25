@@ -1,0 +1,172 @@
+.home {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 20px;
+  background-color: #faf9f4;
+  margin: 3%;
+}
+
+.home-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Intro text */
+.intro {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* Name */
+.name {
+  margin-top: 12px;
+  font-family: "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  font-size: clamp(34px, 6vw, 56px);
+  color: #111;
+}
+
+/* Title */
+.title {
+  margin-top: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+  font-size: clamp(18px, 4vw, 28px);
+  color: #444;
+}
+
+/* Description */
+.description {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+
+  font-size: clamp(15px, 3.5vw, 18px);
+  color: #555;
+}
+
+/* Divider */
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #ddd;
+  margin: 32px auto;
+}
+
+/* Contact links */
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #333;
+  text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-item img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.75;
+}
+
+.contact-item:hover {
+  border-bottom: 1px solid #333;
+}
+
+.contact-item:hover img {
+  opacity: 1;
+}
+
+
+.contact a {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  border-bottom: 1px solid #333;
+}
+
+/* Skills Section */
+.skills-section {
+  margin: 40px 0;
+}
+
+.skills-title {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-badge {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-badge:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .skills-list {
+    gap: 10px;
+  }
+
+  .skill-badge {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .home-content {
+    max-width: 700px;
+  }
+}
+
+/* Mobile */

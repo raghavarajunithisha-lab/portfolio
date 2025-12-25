@@ -1,0 +1,102 @@
+.education {
+  padding: 40px 64px;
+  background-color: #faf9f4;
+}
+
+.section-title {
+  font-size: clamp(26px, 4vw, 32px);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Card background — RESTORED */
+.education-bg {
+  background-color: #fffffe;
+  border: 2px solid black;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Card layout */
+.education-card {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Logo */
+.education-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Content */
+.education-content {
+  flex: 1;
+  font-size: 18px;
+}
+
+.university {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.duration {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.details {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Quote */
+.education-quote {
+  margin-top: 80px;
+  font-size: clamp(16px, 3vw, 20px);
+  font-family: "Caveat", cursive;
+  text-align: center;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 900px) {
+  .education {
+    padding: 32px 40px;
+  }
+
+  .education-bg {
+    padding: 24px;
+  }
+
+  .education-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  .education {
+    padding: 24px 20px;
+  }
+
+  .education-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .education-card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+  }
+
+  .education-content {
+    font-size: 16px;
+  }
+}

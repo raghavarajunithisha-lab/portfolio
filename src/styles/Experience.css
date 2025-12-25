@@ -1,0 +1,143 @@
+.experience {
+  padding: 60px 80px;
+  background-color: #faf9f4;
+}
+
+/* Card */
+.experience-card {
+  border: 2px solid black;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fffffe;
+}
+
+/* Header */
+.experience-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.experience-header h3 {
+  font-size: 24px;
+}
+
+.company {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-top: 6px;
+}
+
+.location {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.duration-badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background-color: #cfe2ff;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Responsibilities layout */
+.responsibilities {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.responsibility-block {
+  flex: 1;
+  text-align: center;
+}
+
+.responsibility-block h4 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.responsibility-block img {
+  margin-bottom: 20px;
+}
+
+.responsibility-block p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.datapipelines{
+  width: 400px;
+}
+
+.serverless{
+  width: 160px;
+}
+
+.batchprocessing{
+  width: 560px;
+}
+
+.dataStorage{
+  width: 200px;
+}
+
+.Infrastructure{
+  width: 160px;
+}
+
+.CI_CD{
+  width: 240px;
+}
+
+.Monitoring_Reliability{
+  width: 120px;
+}
+
+
+/* -------- Tablet -------- */
+@media (max-width: 900px) {
+  .experience {
+    padding: 50px 40px;
+  }
+
+  .responsibilities {
+    gap: 40px;
+  }
+
+}
+
+/* -------- Phone -------- */
+@media (max-width: 600px) {
+  .experience {
+    padding: 40px 20px;
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+  /* Stack points */
+  .responsibilities {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* HIDE images on phone */
+  .responsibility-block img {
+    display: none;
+  }
+
+  /* HIDE headings on phone */
+  .responsibility-block h4 {
+    display: none;
+  }
+
+  /* Show only points */
+  .responsibility-block p {
+    font-size: 15px;
+    text-align: left;
+  }
+}
