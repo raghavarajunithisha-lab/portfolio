@@ -1,4 +1,3 @@
-
 import "../styles/Projects.css";
 
 import healthcareImg from "../assets/health_project1.png";
